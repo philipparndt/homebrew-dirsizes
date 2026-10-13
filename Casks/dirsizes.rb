@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "dirsizes" do
-  version "0.1.0"
-  sha256 "b2e653df3d479a128864fc8b74790d3bb27ee73c4b1bd5acb3cf3b65156bbb34"
+  version "0.2.0"
+  sha256 "b73aded0df2c233cbfdadc64ec7bd15125561a0cf53399f80ea7410ff44cff3d"
 
   url "https://github.com/philipparndt/dirsizes/releases/download/v#{version}/DirSizes-#{version}.dmg"
   name "DirSizes"
@@ -21,6 +21,7 @@ cask "dirsizes" do
   binary "#{appdir}/DirSizes.app/Contents/Resources/bin/dirsizes"
 
   zap trash: [
+    "~/Library/Application Support/de.rnd7.dirsizes",
     "~/Library/Preferences/de.rnd7.dirsizes.plist",
     "~/Library/Saved Application State/de.rnd7.dirsizes.savedState",
   ]
