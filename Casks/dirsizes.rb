@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "dirsizes" do
-  version "0.7.0"
-  sha256 "a7a96b95d63995176fdd0f7bb23276247d02fbede53415b38ec9951daf29f2d3"
+  version "0.7.1"
+  sha256 "0bee68e8f0d1be3e6714b7df45b238f724591ca61bb5d04d6f7392805963d957"
 
   url "https://github.com/philipparndt/dirsizes/releases/download/v#{version}/DirSizes-#{version}.dmg"
   name "DirSizes"
